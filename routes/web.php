@@ -25,6 +25,8 @@ Route::delete('logout', 'SessionsController@destroy')->name('logout');
 
 
 Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
+
+Route::get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email');
 //Route::get('/users', 'UsersController@index')->name('users.index');
 //Route::get('/users/create', 'UsersController@create')->name('users.create');
 //Route::get('/users/{user}', 'UsersController@show')->name('users.show');
