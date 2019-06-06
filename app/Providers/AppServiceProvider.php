@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use DB;
+use Event;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
